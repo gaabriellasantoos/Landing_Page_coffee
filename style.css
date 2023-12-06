@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab:wght@200&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #f5e6da;
+    color: #312f3a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 80px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.logo h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    color: #c95400;
+    margin-top: 8px;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin-top: -20px;
+}
+
+.links a {
+    color: #8B4513;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.links a:hover {
+    color: #fffaae;
+}
+
+.showcase-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    position: relative;
+}
+
+.big-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #53316e;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #642929;
+    max-width: 450px;
+    margin-bottom: 30px;
+}
+
+.cta .btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #c95400;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta .btn:hover {
+    background-color: #a33400;
+}
+
+.person-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.enchanted-coffee {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 56px;
+    display: inline-block;
+    color: #6e4e31;
+}
+
+.coffee-text {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 56px;
+    display: inline-block;
+    color: #520000;
+}
+
+.dark-mode {
+    background-color: #C0896A;
+    color: #fff;
+}
+
+.dark-icon {
+    color: #fff;
+}
+
+.icon-container {
+    position: absolute;
+    bottom: 20px;
+    left: 90px;
+    z-index: 999;
+}
+
+.toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 14px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-btn i {
+    font-size: 32px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.toggle-btn:hover i {
+    color: #777;
+}

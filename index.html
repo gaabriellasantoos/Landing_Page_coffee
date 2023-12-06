@@ -1,0 +1,88 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Josefin+Sans:ital,wght@100&family=Oswald:wght@300&family=Roboto+Slab:wght@200&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b2a18b3bf2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <header class="header-content">
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.img.png" alt="Logo">
+                    <h3>Café Encantado</h3>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Nosso Café</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="login.html">Entrar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="showcase-area">
+            <div class="container">
+                <h1 class="big-title">
+                    <span class="enchanted-coffee">Enchanted</span>
+                    <span class="coffee-text">Coffee</span>
+                </h1>
+
+                <p class="text">Bem-vindo ao lugar onde a magia se mistura com o aroma incrível do café. Explore nossos blends exclusivos e mergulhe na experiência do Café Encantado.</p>
+                <div class="cta">
+                    <a href="2.html" class="btn">Comece aqui</a>
+                </div>
+            </div>
+
+            <div class="right">
+                <img src="img.coffee.png" alt="Person image" class="person-img">
+            </div>
+
+            <div class="icon-container">
+                <button class="toggle-btn">
+                    <i id="moonIcon" class="fas fa-moon"></i>
+                    <i id="sunIcon" class="fas fa-sun" style="display: none;"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="login.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const html = document.querySelector('html');
+            const body = document.body;
+            const moonIcon = document.getElementById('moonIcon');
+            const sunIcon = document.getElementById('sunIcon');
+
+            function changeColor(color) {
+                html.style.backgroundColor = color;
+            }
+
+            moonIcon.addEventListener('click', function() {
+                changeColor('#121212');
+                body.classList.add('dark-mode');
+                moonIcon.style.display = 'none';
+                sunIcon.style.display = 'inline-block';
+            });
+
+            sunIcon.addEventListener('click', function() {
+                changeColor('#f5e6da');
+                body.classList.remove('dark-mode');
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'inline-block';
+            });
+        });
+    </script>
+</body>
+
+</html>
